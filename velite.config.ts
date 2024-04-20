@@ -1,4 +1,7 @@
 import { defineConfig, defineCollection, s } from "velite";
+import rehypeSlug from "rehype-slug";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 // Pour avoir un slug valide
 const computedFields = <T extends { slug: string }>(data: T) => ({
@@ -31,4 +34,22 @@ export default defineConfig({
     clean: true,
   },
   collections: { posts },
+  // Plugins pour avoir la couleur de synthaxe quand bloc de code + config
+  mdx: {
+    rehypePlugins: [
+      rehypeSlug,
+      [rehypePrettyCode, { theme: "github-dark" }],
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: "wrap",
+          properties: {
+            className: ["subheading-anchor"],
+            ariaLabel: "Link to section",
+          },
+        },
+      ],
+    ],
+    remarkPlugins: [],
+  },
 });
