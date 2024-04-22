@@ -20,7 +20,7 @@ export default async function AboutPage() {
             <AvatarImage src="/avatar.png" alt={siteConfig.author} />
             <AvatarFallback>TKB</AvatarFallback>
           </Avatar>
-          <h2 className="text-2xl font-bold text-center break-words">
+          <h2 className="text-2xl font-bold text-center break-words text-primary">
             {siteConfig.author}
           </h2>
           <p className="text-muted-foreground text-center break-words">

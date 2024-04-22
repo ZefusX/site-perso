@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import { cn, sortPosts } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { posts } from "@/.velite";
 import { PostItem } from "@/components/post-item";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5);
@@ -15,10 +17,23 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
-              Je suis Théo Kreder-Bail
+              <TypeAnimation
+                sequence={[
+                  "Je suis Théo Kreder-bail",
+                  2000, // Waits 1s
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+              />
             </h1>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance text-muted-foreground">
-              Je suis aspirant développeur
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance text-primary">
+              <TypeAnimation
+                sequence={[1500, "Je suis aspirant développeur", 2000]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+              />
             </h2>
             <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl mt-3">
               Bienvenue sur mon site, ici vous pouvez retrouver mon CV, mes
