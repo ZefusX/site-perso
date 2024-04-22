@@ -20,7 +20,7 @@ export function MobileNav() {
           <span className="sr-only">Changer de theme</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="right">
+      <SheetContent side="top">
         <MobileLink
           onOpenChange={setOpen}
           href="/"
@@ -35,6 +35,9 @@ export function MobileNav() {
           </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/about">
             A propos
+          </MobileLink>
+          <MobileLink onOpenChange={setOpen} href="/projects">
+            Projets
           </MobileLink>
           <Link target="_blank" rel="noreferrer" href={siteConfig.links.github}>
             GitHub
