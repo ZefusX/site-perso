@@ -3226,7 +3226,7 @@ export const Icons = {
   ),
   blob_thing: (props: IconProps) => (
     <svg
-      width="585"
+      width="65vw"
       height="475"
       viewBox="0 0 585 475"
       fill="none"

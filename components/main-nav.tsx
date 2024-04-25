@@ -32,7 +32,7 @@ export function MainNav() {
       >
         A propos
       </Link>
-      <Link
+      {/* <Link
         href="/projects"
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
@@ -40,7 +40,7 @@ export function MainNav() {
         )}
       >
         Projets
-      </Link>
+      </Link> */}
     </nav>
   );
 }
