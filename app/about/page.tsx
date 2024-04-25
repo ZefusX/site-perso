@@ -29,11 +29,12 @@ export default async function AboutPage() {
         </div>
         <p className="text-muted-foreground text-lg py-4">
           Elève de terminale en spécialité maths et informatique, je suis
-          passionné par le développement depuis 5 ans. J'ai commencé avec Python
-          avant de m'orienter vers le développement web (en utilisant des
-          technologies tel que React et NextJS). Aujourd'hui je code des projets
-          pour résoudre des problèmes personnels, me challenger sur un ou
-          plusieurs aspects, ou pour en apprendre plus sur certaines notions
+          passionné par le développement depuis 5 ans. J&apos;ai commencé avec
+          Python avant de m&apos;orienter vers le développement web (en
+          utilisant des technologies tel que React et NextJS). Aujourd&apos;hui
+          je code des projets pour résoudre des problèmes personnels, me
+          challenger sur un ou plusieurs aspects, ou pour en apprendre plus sur
+          certaines notions
         </p>
       </div>
       <hr className="my-8" />

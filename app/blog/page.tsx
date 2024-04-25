@@ -34,7 +34,7 @@ export default async function BlogPage() {
           })}
         </ul>
       ) : (
-        <p>Il n'y a rien à voir ici pour le moment 0.o</p>
+        <p>Il n&apos;y a rien à voir ici pour le moment 0.o</p>
       )}
     </div>
   );
