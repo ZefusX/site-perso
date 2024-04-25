@@ -5,42 +5,47 @@ import { buttonVariants } from "@/components/ui/button";
 import { posts } from "@/.velite";
 import { PostItem } from "@/components/post-item";
 import { TypeAnimation } from "react-type-animation";
+import { Icons } from "@/components/icons";
 
 export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5);
   return (
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
-        <div className="container flex flex-col gap-5">
-          <div className="mx-12 xl:mx-52">
-            <h5 className="text-muted-foreground">Bonjour,</h5>
+        <div className="flex flex-col mb-24 items-center justify-center">
+          <div className="absolute z-10">
+            <Icons.blob_thing />
           </div>
-          <div className="text-center">
+        </div>
+        <div className="container flex flex-col gap-5">
+          <div className="text-center z-20">
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
               <TypeAnimation
                 sequence={[
                   "Je suis Théo Kreder-bail",
-                  2000, // Waits 1s
+                  5000,
+                  "Je suis aspirant développeur",
+                  5000,
                 ]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
               />
             </h1>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance text-primary">
+            {/* <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance text-primary">
               <TypeAnimation
                 sequence={[1500, "Je suis aspirant développeur", 2000]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
               />
-            </h2>
+            </h2> */}
             <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl mt-3">
               Bienvenue sur mon site, ici vous pouvez retrouver mon CV, mes
               projets et mon blog documentant mes projets
             </p>
           </div>
-          <div className="flex flex-col gap-4 justify-center sm:flex-row">
+          <div className="flex flex-col gap-4 justify-center sm:flex-row z-20">
             <Link
               href="/about"
               className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-fit")}

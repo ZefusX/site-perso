@@ -71,10 +71,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "color-change": {
+          "0%": { fill: "#B071FF" },
+          "50%": { fill: "#FF9C71" },
+          "100%": { fill: "#B071FF" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "inf-color-change": "color-change 8s infinite linear",
+      },
+      blur: {
+        "4xl": "100px",
       },
     },
   },
