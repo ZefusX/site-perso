@@ -119,32 +119,35 @@ export default async function AboutPage() {
               Suis-je disponible pour vous aider ?
             </AccordionTrigger>
             <AccordionContent>
-              Oui. Vous pouvez me contacter par mail via l'icone en bas du site
-              !
+              Oui. Vous pouvez me contacter par mail via l&apos;icone en bas du
+              site !
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>Comment ai-je appris à coder ?</AccordionTrigger>
             <AccordionContent>
-              Grâce a de nombreuses essais et échecs, des vidéos d'explications
-              et les cours d'NSI pour renforcer les bases.
+              Grâce a de nombreuses essais et échecs, des vidéos
+              d&apos;explications et les cours d&apos;NSI pour renforcer les
+              bases.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>Quand ce site a-t-il été créé ?</AccordionTrigger>
             <AccordionContent>
-              J'ai commencé début avril et je l'ai déployé le 25 avril 2024.
+              J&apos;ai commencé début avril et je l&apos;ai déployé le 25 avril
+              2024.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>
-              Qu'est-ce que j'envisage pour la suite ?
+              Qu&apos;est-ce que j&apos;envisage pour la suite ?
             </AccordionTrigger>
             <AccordionContent>
-              J'envisage des études en école d'ingénieur (spécialisé dans
-              l'informatiques). A part cela, les licences et BUT d'informatiques
-              sont mes autres choix. Si je ne suis pas prit en première année,
-              j'envisage d'entrer dans une école d'ingénieur à BAC +3.
+              J&apos;envisage des études en école d&apos;ingénieur (spécialisé
+              dans l&apos;informatiques). A part cela, les licences et BUT
+              d&apos;informatiques sont mes autres choix. Si je ne suis pas prit
+              en première année, j&apos;envisage d&apos;entrer dans une école
+              d&apos;ingénieur à BAC +3.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
