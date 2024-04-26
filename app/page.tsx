@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
         <div className="flex flex-col mb-24 items-center justify-center">
-          <div className="absolute w-full z-10">
+          <div className="w-full hidden xl:block absolute">
             <Icons.blob_thing />
           </div>
         </div>
